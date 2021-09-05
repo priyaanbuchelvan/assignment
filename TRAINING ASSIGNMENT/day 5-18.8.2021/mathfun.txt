@@ -1,0 +1,67 @@
+package pri;
+
+public class MathEg {
+
+
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			Scanner s=new Scanner(System.in);
+			System.out.println("Enter two values");
+			int a=s.nextInt();
+			int b=s.nextInt();
+			int n = 14;
+			for(int i=0;i<n;i++)
+			{
+				System.out.println("Enter the math case");
+				int ch=s.nextInt();
+			switch(ch)
+			{
+				case 1:
+			System.out.println(Math.sin(90));
+			break;
+				case 2:
+			System.out.println(Math.cos(30));
+			break;
+				case 3:
+			System.out.println(Math.tan(180));
+			break;
+				case 4:
+			System.out.println(Math.ceil(59.555));
+			break;
+				case 5:
+			System.out.println(Math.floor(5.001));
+			break;
+				case 6:
+			System.out.println(Math.PI);
+			break;
+				case 7:
+			System.out.println(Math.getExponent(2.5));
+			break;
+				case 8:
+			System.out.println(Math.log10(10));
+			break;
+				case 9:
+			System.out.println(Math.max(a, b));
+			break;
+				case 10:
+			System.out.println(Math.min(a, b));
+			break;
+				case 11:
+			System.out.println(Math.multiplyExact(a, b));
+			break;
+				case 12:
+			System.out.println(Math.sqrt(a));
+			break;
+				case 13:
+			System.out.println(Math.toRadians(2.11));
+			break;
+			default:
+				System.out.println("math closed");
+			
+			}
+
+		}
+			System.out.println("closed");
+
+		}
+	}

@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Non_Repeated_Char {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter The String ");
+		String str = sc.nextLine();
+		int count, i, j;
+
+		char ch[] = str.toLowerCase().toCharArray();
+		System.out.println("First Non Repeated Character From String is ");
+		// reading through char elements
+		for (i = 0; i < ch.length; i++) {
+			count = 1;
+			for (j = i + 1; j < ch.length; j++) {
+				if (ch[i] == ch[j] && ch[i] != ' ') {
+					count++;
+					ch[j] = '0';
+				}
+			}
+			
+
+			if (count ==1) 
+			{
+				System.out.println(ch[i]);
+				break;
+			
+			}
+		}
+
+
+	}
+
+}

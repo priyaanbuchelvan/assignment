@@ -1,0 +1,40 @@
+package Customer;
+
+public class Customer {
+
+	private static int cid;
+	private static String name;
+	private static  int boughtprice;
+	
+	public static int getCid() {
+		return cid;
+	}
+
+	public static String getName() {
+		return name;
+	}
+	
+	public static int getBoughtprice() {
+		return boughtprice;
+	}
+
+	public Customer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Customer(int cid, String name, int boughtprice) {
+		super();
+		this.cid = cid;
+		this.name = name;
+		this.boughtprice = boughtprice;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [cid=" + cid + ", name=" + name + ", boughtprice=" + boughtprice + "]";
+	}
+	
+	
+	
+}

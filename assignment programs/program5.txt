@@ -1,0 +1,32 @@
+package Assignment;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Program5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ArrayList<String> colors=new ArrayList();
+		
+		colors.add("Pink");
+		colors.add("Blue");
+		colors.add("Peach");
+		colors.add("Black");
+		colors.add("White");
+		
+		System.out.println(colors);
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter The Index : ");
+		int position=sc.nextInt();
+		System.out.println("Enter The Colour: ");
+		String r=sc.next();
+		
+		color.set(position,r);
+		System.out.println("New Updated Array is : "+colors);
+
+	}
+
+}

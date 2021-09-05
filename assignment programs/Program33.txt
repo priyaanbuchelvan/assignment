@@ -1,0 +1,30 @@
+package Assignment;
+
+import java.util.TreeMap;
+import java.util.Scanner;
+
+public class Program33{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		TreeMap<Integer,String> tree=new TreeMap<Integer,String>();
+		
+		tree.put(1,"Tintu");
+		tree.put(3,"Riya");
+		tree.put(2,"Diya");
+		tree.put(5,"Oviya");
+		tree.put(4,"Lily");
+		
+		System.out.println("Original TreeMap is : "+tree);
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter The Key : ");
+		int x=sc.nextInt();
+		
+		System.out.println("Keys are Greater Than Or Equal to "+'"'+x+'"'+" is : "+tree.tailMap(x,true));
+		
+		
+	}
+
+}
+

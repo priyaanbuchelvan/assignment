@@ -1,0 +1,24 @@
+package Assignment;
+
+import java.util.TreeSet;
+
+public class Program19 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		TreeSet<Integer> set=new TreeSet();
+		
+		set.add(50);
+		set.add(20);
+		set.add(10);
+		set.add(40);
+		set.add(30);
+		
+		System.out.println("TreeSet Contains : "+set);
+		
+		System.out.println("Removes The First Element : "+set.pollFirst());
+		System.out.println("TreeSet After Removing First Element : "+set);
+		
+	}
+}

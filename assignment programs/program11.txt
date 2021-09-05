@@ -1,0 +1,47 @@
+package Assignment;
+
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class Program11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashSet<String> color=new HashSet();
+		
+		colors.add("Pink");
+		colors.add("Blue");
+		colors.add("Peach");
+		colors.add("Black");
+		colors.add("White");
+		
+		System.out.println("HashSet Contains : "+colors);
+		
+		int n=colors.size();
+		String arr[]=new String[n];
+		
+		int i=0;
+		for(String ele:colors)
+		{
+			arr[i++]=ele;
+		}
+		
+		System.out.println("Array Contains : ");
+		for(String ele:arr)
+		{
+			System.out.println(ele);
+		}
+		
+		//OR
+		
+		colors.toArray(arr);
+		System.out.println("\nArray Contains(Using ToArray()) Method : ");
+		for(String ele:arr)
+		{
+			System.out.println(ele);
+		}
+
+	}
+
+}

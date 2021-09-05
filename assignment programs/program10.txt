@@ -1,0 +1,27 @@
+package Assignment;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Program10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ArrayList<String> color=new ArrayList();
+		
+		colors.add("Pink");
+		colors.add("Blue");
+		colors.add("Peach");
+		colors.add("Black");
+		colors.add("White");
+		
+		System.out.println("Print Using Index of an Element:");
+		for(int i=0;i<colors.size();i++)
+		{
+			System.out.println("In Position "+(i+1)+" Element Present is "+color.get(i));
+		}
+
+	}
+
+}

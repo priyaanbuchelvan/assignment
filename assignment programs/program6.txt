@@ -1,0 +1,36 @@
+package Assignment;
+
+import java.util.ArrayList;
+
+public class Program6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ArrayList<String> colors=new ArrayList();
+		
+		boolean ans=colors.isEmpty();
+		
+		if(ans)
+		{
+			System.out.println("Array List is Empty!");
+		}
+		else
+		{
+			System.out.println("Array List is Not Empty!");
+		}
+		
+		color.add("black");
+		ans=color.isEmpty();
+		
+		if(ans)
+		{
+			System.out.println("Array List is Empty!");
+		}
+		else
+		{
+			System.out.println("Array List is Not Empty!");
+		}
+	}
+
+}

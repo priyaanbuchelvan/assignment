@@ -1,0 +1,29 @@
+package Assignment;
+
+import java.util.HashSet;
+import java.util.ArrayList;
+
+public class Program13 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashSet<String> colors=new HashSet();
+		
+		colors.add("Pink");
+		colors.add("Blue");
+		colors.add("Peach");
+		colors.add("Black");
+		colors.add("White");
+		
+		System.out.println("HashSet Contains : "+colors);
+		
+		ArrayList<String> HashSetToArrayList=new ArrayList<String>(colors);
+		
+		System.out.println("ArrayList Contains : "+HashSetToArrayList);   
+		
+		HashSetToArrayList.add(2,"Purple");
+		System.out.println("ArrayList Contains : "+HashSetToArrayList);  
+	}
+
+}

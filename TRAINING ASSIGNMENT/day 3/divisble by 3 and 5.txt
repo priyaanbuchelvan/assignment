@@ -1,0 +1,29 @@
+package task;
+import java.util.*;
+
+public class NumDiv {
+	public static void main(String args[])
+	{
+		int a;
+		Scanner sc=new Scanner(System.in);
+		a=sc.nextInt();
+		int last=a%10;
+		if(last%3==0 && last%5==0)
+		{
+			System.out.println(last +"is divisible by both");
+		}
+		else if(last%3==0)
+		{
+			System.out.println(last +"is divisible only by 3");
+		}
+		else if(last%5==0)
+		{
+			System.out.println(last +"is divisible inly by 5");
+		}
+		else
+		{
+			System.out.println( last +"is not divisible by 3 and 5");
+		}
+	}
+
+}

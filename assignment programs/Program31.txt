@@ -1,0 +1,26 @@
+package Assignment;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+
+public class Program31{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		HashMap<Integer,String> hash=new HashMap<Integer,String>();
+		
+		hash.put(1,"Tintu");
+		hash.put(3,"Riya");
+		hash.put(2,"Diya");
+		hash.put(5,"Oviya");
+		hash.put(4,"Lily");
+		
+		System.out.println("Original HashMap is : "+hash);
+		
+		System.out.println("Collection View of The Values Contained in a Map is : "+hash.values());
+		
+	}
+
+}
+

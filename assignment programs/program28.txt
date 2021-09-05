@@ -1,0 +1,28 @@
+package Assignment;
+
+import java.util.HashMap;
+import java.util.Scanner;
+import java.util.Set;
+
+public class Program28{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		HashMap<Integer,String> hash=new HashMap<Integer,String>();
+		
+		hash.put(1,"Tintu");
+		hash.put(3,"Riya");
+		hash.put(2,"Diya");
+		hash.put(5,"Oviya");
+		hash.put(4,"Lily");
+		
+		System.out.println("Original HashMap is : "+hash);
+		
+		Set set=hash.entrySet();
+		
+		System.out.println("Set Values : "+set);
+		
+	}
+
+}
+

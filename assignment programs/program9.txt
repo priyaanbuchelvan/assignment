@@ -1,0 +1,31 @@
+package Assignment;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Program9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ArrayList<String> colors=new ArrayList();
+		
+		colors.add("Pink");
+		colors.add("Blue");
+		colors.add("Peach");
+		colors.add("Black");
+		colors.add("White");
+		
+		System.out.println("Original Array : "+colors);
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter The Element ");
+		String n=sc.next();
+		
+		colors.set(1,n);
+		System.out.println("Second Element"+'"'+n+'"');
+		System.out.println("Updated Array : "+colors);
+
+	}
+
+}

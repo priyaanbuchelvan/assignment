@@ -1,0 +1,28 @@
+package Assignment;
+
+import java.util.HashSet;
+import java.util.TreeSet;
+
+public class Program12 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashSet<String> color=new HashSet();
+		
+		colors.add("Pink");
+		colors.add("Blue");
+		colors.add("Peach");
+		colors.add("Black");
+		colors.add("White");
+		
+		System.out.println("HashSet Contains : "+colors);
+		
+		TreeSet<String> hashsetToTreeSet=new TreeSet<String>(colors);
+		//hashsetToTreeSet.addAll(colors);
+		
+		System.out.println("TreeSet Contains : "+hashsetToTreeSet);   
+
+	}
+
+}

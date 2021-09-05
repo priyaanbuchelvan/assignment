@@ -1,0 +1,25 @@
+package Assignment;
+
+import java.util.HashSet;
+
+public class Program16 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashSet<String> colors=new HashSet();
+		
+		colors.add("Pink");
+		colors.add("Blue");
+		colors.add("Peach");
+		colors.add("Black");
+		colors.add("White");
+		
+		System.out.println("HashSet Contains : "+colors);
+		
+		colors.clear();
+		System.out.println("The Final Set : "+colors);
+		
+		
+	}
+}

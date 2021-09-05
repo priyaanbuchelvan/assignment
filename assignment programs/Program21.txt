@@ -1,0 +1,30 @@
+package Assignment;
+
+import java.util.Scanner;
+import java.util.TreeSet;
+
+
+public class Program21 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		TreeSet<Integer> set=new TreeSet();
+		
+		set.add(50);
+		set.add(20);
+		set.add(10);
+		set.add(40);
+		set.add(30);
+		
+		System.out.println("TreeSet Contains : "+set);
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter The Element Wants To Deleted : ");
+		int n=sc.nextInt();
+		
+		set.remove(n);
+		System.out.println("TreeSet After Removing the Given Element "+n+" is : "+set);
+		
+	}
+}

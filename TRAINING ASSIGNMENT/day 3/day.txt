@@ -1,0 +1,52 @@
+package student1;
+import java.util.*;
+
+public class DayRes {
+public static void main(String args[])
+{
+	Scanner sc=new Scanner(System.in);
+	String day=sc.nextLine();
+	switch(day)
+	{
+	case "sunday":
+	{
+		System.out.println(day +"is the first day");
+	}
+	break;
+	case "monday":
+	{
+		System.out.println(day +"is the second day");
+	}
+	break;
+	case "tuesday":
+	{
+		System.out.println(day +"is the third day");
+	}
+	break;
+	case "wednesday":
+	{
+		System.out.println(day +"is the fourth day");
+	}
+	break;
+	case "thursday":
+	{
+		System.out.println(day +"is the fifth day");
+	}
+	break;
+	case "friday":
+	{
+		System.out.println(day +"is the sixth day");
+	}
+	break;
+	case "saturday":
+	{
+		System.out.println(day +"is the seventh day");
+	}
+	break;
+	default:
+		System.out.println("invalid");
+	
+		
+	}
+}
+}

@@ -1,0 +1,29 @@
+package Assignment;
+
+import java.util.PriorityQueue;
+
+public class Program25 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		PriorityQueue pq=new PriorityQueue();
+		
+		pq.offer(78);
+		pq.offer(45);
+		pq.offer(-98);
+		pq.offer(-34);
+		pq.offer(0);
+		pq.offer(8);
+		pq.offer(45);
+		pq.offer(56);
+		
+		System.out.println("Priority Queue : "+pq);
+		
+		String str1=pq.toString();
+		System.out.println("\nString Representation of Priority Queue is :"+str1);
+		
+		
+	}
+
+}
+

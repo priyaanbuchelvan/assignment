@@ -1,0 +1,32 @@
+package Assignment;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Program27{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		HashMap<Integer,String> hash=new HashMap<Integer,String>();
+		
+		hash.put(1,"Dhanam");
+		hash.put(3,"Riya");
+		hash.put(2,"Diya");
+		hash.put(5,"Oviya");
+		hash.put(4,"Lily");
+		
+		System.out.println("Original HashMaps is : "+hash);
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter The Key To Be Searched : ");
+		int n=sc.nextInt();
+		
+		System.out.println("Is the Key "+'"'+n+'"'+" Present? "+hash.containsKey(n));
+		
+		System.out.println("Enter The Value To Be Searched : ");
+		String str=sc.next();
+		System.out.println("Is the Key "+'"'+str+'"'+" Present? "+hash.containsValue(str));
+		
+	}
+
+}
+

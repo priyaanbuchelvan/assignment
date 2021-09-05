@@ -1,0 +1,47 @@
+package Assignment;
+
+import java.util.PriorityQueue;
+
+public class Program24 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		PriorityQueue<Integer> pq=new PriorityQueue<Integer>();
+		
+		pq.offer(78);
+		pq.offer(45);
+		pq.offer(-98);
+		pq.offer(-34);
+		pq.offer(0);
+		pq.offer(8);
+		pq.offer(45);
+		pq.offer(56);
+		
+		System.out.println("Priority Queue : "+pq);
+		
+		int arr[]=new int[pq.size()];
+		int i=0;
+		for(int x:pq)
+		{
+			arr[i++]=x;
+		}
+		
+		System.out.println("The Array is:");
+		for(int x:arr)
+		{
+			System.out.println(x);
+		}
+		
+		//OR
+		Object[] arr1=pq.toArray();
+		System.out.println("\nThe Array(Using toArray()) is :");
+		for(i=0;i<arr1.length;i++)
+		{
+			System.out.println(arr1[i]);
+		}
+		
+		
+	}
+
+}
+

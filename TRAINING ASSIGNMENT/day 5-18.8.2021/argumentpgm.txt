@@ -1,0 +1,107 @@
+package pri;
+
+public class ArrEx {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	int num;
+		ArrEx cl=new ArrEx();
+		if(args.length>0)
+		{
+			num=Integer.parseInt(args[0]);
+			cl.prime(num);
+			cl.EvenOdd(num);
+			cl.palindrome(num);
+			cl.armstrong(num);
+			cl.perfect(num);
+			
+		}
+	}
+	public void EvenOdd(int num)
+	{
+		if(num%2==0)
+		{
+			System.out.println(num +" is a Even");
+		}
+		else
+		{
+			System.out.println(num +" is a Odd");
+		}
+	}
+	
+	public  void prime(int num) {
+		int flag = 0;
+		for (int i = 2; i <= num / 2; i++) 
+	    {
+	      if (num % i == 0) 
+	      {
+	        flag = 1;
+	        break;
+	      }
+	    }
+	    if (flag==0)
+	    {
+	      System.out.println(num +" is a prime number");
+	    }
+	    else
+	    {
+	      System.out.println(num + " is not a prime number.");
+	    }
+	}
+	
+	public void palindrome(int num)
+	{
+		int temp=num,sum1=0;
+		while(num>0)
+		{
+			int n1=num%10;
+			sum1=(sum1*10)+n1;
+			num=num/10;
+		}
+		if(temp==sum1)
+		{
+			System.out.println(temp+ " palindrome");
+		}
+		else
+		{
+			System.out.println(temp+" not a palindrome");
+		}
+	}
+	
+	public void armstrong(int num)
+	{
+		int temp1=num, sum1=0;
+		while(num>0)
+		{
+			int n2=num%10;
+			sum1=sum1+(n2*n2*n2);
+			num=num/10;
+		}
+		if(temp1==sum1)
+		{
+			System.out.println(temp1 +" is a amstrong number");
+		}
+		else
+		{
+			System.out.println(temp1  +" not a armstrong number");
+		}
+	}
+	
+	public void perfect(int num)
+	{
+		int Sum=0;
+		for(int i = 1 ; i < num ; i++) {
+			if(num % i == 0)  {
+				Sum = Sum + i;
+			}
+		}
+		if (Sum == num) {
+			System.out.format(num+" is a Perfect Number");
+		}
+		else {
+			System.out.format(num+" is not a Perfect Number");
+		}
+	}
+	
+	}
+
+

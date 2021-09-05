@@ -1,0 +1,18 @@
+package task;
+import java.util.*;
+
+public class BiggerNum {
+	public static void main(String args[])
+	{
+		double a,b;
+		Scanner sc=new Scanner(System.in);
+		a=sc.nextDouble();
+		b=sc.nextDouble();
+		double c=a>b? a:b;
+		System.out.println(c +"is the greater number");
+				
+		
+	}
+	
+
+}

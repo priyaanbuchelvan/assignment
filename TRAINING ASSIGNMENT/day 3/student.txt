@@ -1,0 +1,61 @@
+package student1;
+
+public class StuMet {
+	public void display()
+	{
+		System.out.println("name of the student: "+name + "age :" + age +"math mark:" + math +"phy mark:" + "chem mark :"+ chem);
+		
+	}
+	public double total()
+	{
+		return math+phy+chem;
+	}
+	public double average(int total)
+	{
+		return  avg=total%3;
+	}
+	public void show(double avg)
+	{
+		if(avg>65 && avg<=75)
+		{
+			System.out.println("B GRADE");
+		}
+		else if(avg>35 && avg<=65)
+		{
+			System.out.println("C grade");
+		}
+		else if(avg<=35)
+		{
+			System.out.println(" D GRADE");
+		}
+		else
+		{
+			System.out.println(" A GRADE");
+		}
+	}
+}
+package student1;
+
+import java.util.Scanner;
+
+public class StuAvg {
+	public static void main(String args[])
+	{
+
+		String name="priya";
+	     int age=22;
+		int math=98;
+		int phy=80;
+		int chem=90;
+		StuMet a=new StuMet();
+		
+		a.display();
+		a.total();
+		a.average();
+		a.show();
+	}
+		
+		
+		
+	}
+

@@ -1,0 +1,133 @@
+package student1;
+import java.util.*;	
+
+
+public class PerNum {
+	public static void main(String args[])
+	{
+		int num;
+		int r;
+		int sum=0;
+		int flag=0;
+		
+		Scanner sc=new Scanner(System.in);
+		num=sc.nextInt();
+		System.out.println("enter the option ");
+		int n=sc.nextInt();
+		switch(n)
+		{
+		case 1:
+		{
+			if(num%2==0)
+			{
+				System.out.println( "even number");
+			}
+			else
+			{
+				System.out.println("not an even number");
+			}
+		}
+		case 2:
+		{
+			
+				for(int i=2;i<=num;i++)
+				{
+					if(num%2==0)
+					{
+						flag=1;
+						break;
+					}
+				}
+					if(num==1)
+					{
+						System.out.println("it is neither prime nor composite");
+					}
+					else if(flag==0)
+					{
+						System.out.println(" it is a prime number");
+					}
+					else
+					{
+						System.out.println("it is not a prime number");
+					}
+		}
+				
+					break;
+				
+		
+		case 3:
+		{
+		r=num;
+		for(int i=1;i<num;i++)
+		{
+		if(num%i==0)
+		{
+		sum+=i;
+		}
+		}
+		if(r==sum)
+		{
+		    System.out.println("its a perfect  number");
+		}
+		else
+		{
+			System.out.println("not a perfect number");
+		}
+		}
+		break;
+		case 4:
+		{
+			
+			
+                sum=0;
+				int s;
+				int temp=num;
+				while(num>0)
+				{
+				s=num%10;
+				sum=sum*10+s;
+				num=num/10;
+				}
+				
+				if(temp==sum)
+				{
+					System.out.println("it is a palindrome");
+				}
+				else
+				{
+					System.out.println("it is not a palindrome");
+				}
+		}
+				break;
+		case 5:
+		{
+			int last;
+			int k=0;
+			int temp=num;
+			while(num>0)
+			{
+			last=num%10;
+			k=k+(last*last*last);
+			num=num/10;
+			}
+			if(temp==k)
+			{
+				System.out.println("it is an armstrong number");
+			}
+			else
+			{
+				System.out.println("not an armstrong number");
+			}
+		}
+			break;
+		default:
+			
+			
+				System.out.println("exit");
+		}
+	}
+}
+			
+		
+	
+		

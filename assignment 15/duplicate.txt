@@ -1,0 +1,31 @@
+import java.util.Scanner;
+import java.lang.*;
+
+public class Main{
+
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int count=1;
+	    
+	    String b=sc.nextLine();
+	   String a= b.toLowerCase();
+	    char ch[]=a.toCharArray();
+	    int i,j;
+	    for(i=0;i<a.length();i++)
+	    {
+	        for(j=i+1;j<a.length();j++)
+	        {
+	            if(ch[i]==ch[j] && ch[i]!=' ')
+	            {
+	                count++;
+	                ch[j]='0';
+	            }
+	        }
+	        if(count>1 && ch[i]!='0')
+	        {
+	            System.out.print(ch[i]);
+	            
+	        }
+	    }
+	}
+}

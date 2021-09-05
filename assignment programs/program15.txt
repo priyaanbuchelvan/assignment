@@ -1,0 +1,35 @@
+package Assignment;
+
+import java.util.HashSet;
+
+public class Program15 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashSet<String> colors1=new HashSet();
+		
+		colors1.add("Pink");
+		colors1.add("Blue");
+		colors1.add("Peach");
+		colors1.add("Black");
+		colors1.add("White");
+		
+		System.out.println("HashSet 1 Contains : "+colors1);
+		
+		HashSet<String> colors2=new HashSet();
+		
+		colors2.add("Pink");
+		colors2.add("Purple");
+		colors2.add("Peach");
+		colors2.add("Yellow");
+		colors2.add("White");
+		
+		System.out.println("HashSet 2 Contains : "+colors2);
+		
+		colors1.retainAll(colors2);
+		System.out.println("Same Elements in HashSet1 And HashSet2 Are : "+colors1);
+		
+		
+	}
+}
